@@ -19,7 +19,12 @@ def read_instance(fp):
 
 
 def bi2words(chars):
-    # insert your code here
+    str = ''
+    for key, char in enumerate(chars):
+      str += ' ' if char[1] == 'B' and key != 0 else ''
+      str += char[0]
+
+    return str
 
 
 if __name__=="__main__":
@@ -36,4 +41,4 @@ if __name__=="__main__":
         sys.exit(1)
 
     for sentence in read_instance(fpi):
-        print sentence
+        fpo.write(bi2words(sentence) + '\n')

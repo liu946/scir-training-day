@@ -12,6 +12,7 @@ class NGram(object):
     # @param    sentence    list{str}
     # @return   none
     def scan(self, sentence):
+        pass
         # file your code here
 
     # caluclate the ngram of the words
@@ -19,6 +20,7 @@ class NGram(object):
     # @param    words       list{str}
     # @return   int         count of the ngram
     def ngram(self, words):
+        pass
         # file your code here
 
 
